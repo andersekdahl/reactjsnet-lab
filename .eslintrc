@@ -1,0 +1,55 @@
+{
+	"env": {
+		"browser": true,
+		"node": true
+	},
+	"plugins": [
+		"nodeca"
+	],
+	"ecmaFeatures": {
+		"defaultParams": true,
+		"arrowFunctions": true,
+		"modules": true
+	},
+	"globals": {
+		"define": false,
+		"Modernizr": false
+	},
+	"rules": {
+		"semi": 2,
+		"quotes": [2, "single", "avoid-escape"],
+		"eol-last": 0,
+		"new-cap": 0,
+		"indent": [2, "tab"],
+		"brace-style": [2, "1tbs"],
+		"comma-spacing": 2,
+		"key-spacing": [2, {
+			"beforeColon": false,
+			"afterColon": true
+		}],
+		"no-multiple-empty-lines": [1, {
+			"max": 2
+		}],
+		"space-after-function-name": [2, "never"],
+		"space-after-keywords": [2, "always", {
+			"checkFunctionKeyword": true
+		}],
+		"space-before-blocks": [2, "always"],
+		"space-in-brackets": [2, "never"],
+		"space-in-parens": [2, "never"],
+		"spaced-line-comment": [2, "always"],
+		"max-len": [2, 140, 2],
+		"no-unused-vars": [2, {"vars": "all", "args": "none"}],
+		"no-use-before-define": [2, "nofunc"],
+		"no-mixed-spaces-and-tabs": [2, "smart-tabs"],
+
+		"no-loop-func": 0,
+		"no-alert": 0,
+		"no-multi-str": 0,
+		"no-underscore-dangle": 0,
+		"comma-dangle": 0,
+		"no-extra-strict": 0,
+
+		"nodeca/indent": [2, "tabs", 1]
+	}
+}
