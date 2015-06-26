@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "set NODE_ENV=development&&npm i && rimraf assets && webpack-dev-server --progress --colors --config webpack/config.js",
+    "build-production": "set NODE_ENV=production&&npm i && rimraf assets && webpack --production --progress --colors --profile --config webpack/config.js",
+    "build": "set NODE_ENV=development&&npm i && rimraf assets && webpack --progress --colors --profile --config webpack/config.js",
+    "watch": "set NODE_ENV=development&&npm i && rimraf assets && webpack --progress --colors --profile --watch --config webpack/config.js"
   },
   "repository": {
     "type": "git",
@@ -17,10 +20,26 @@
   },
   "homepage": "https://github.com/andersekdahl/reactjsnet-lab#readme",
   "devDependencies": {
-    "babel-core": "^5.6.14",
-    "babel-loader": "^5.2.2",
+    "autoprefixer-core": "^5.1.7",
+    "autoprefixer-loader": "^2.0.0",
+    "babel-core": "^5.5.8",
+    "babel-loader": "^5.1.4",
+    "bootstrap": "^3.3.4",
+    "css-loader": "^0.14.5",
+    "eslint": "^0.22.1",
+    "eslint-loader": "^0.14.0",
+    "eslint-plugin-nodeca": "^1.0.3",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "file-loader": "^0.8.4",
     "node-libs-browser": "^0.5.2",
+    "node-sass": "^3.2.0",
+    "optimist": "^0.6.1",
     "react": "^0.13.3",
-    "webpack": "^1.9.12"
+    "rimraf": "^2.4.0",
+    "sass-loader": "^1.0.2",
+    "style-loader": "^0.12.3",
+    "webpack": "^1.9.11",
+    "webpack-dev-server": "^1.9.0",
+    "webpack-notifier": "^1.2.1"
   }
 }
