@@ -9,7 +9,7 @@ namespace ReactJSNET
 		public static void Configure()
 		{
             ReactSiteConfiguration.Configuration
-                .AddScript("~/assets/bundle.js");
+                .AddScriptWithoutTransform("~/assets/bundle.js");
 		}
 	}
 }
